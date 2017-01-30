@@ -1,6 +1,6 @@
 #!/bin/bash
 # This file is meant to be included by the parent cppbuild.sh script
-if [[ -z "$PLATFORM" ]]; then
+if [[ -z "linux-x86_64" ]]; then
     pushd ..
     bash cppbuild.sh "$@" ffmpeg
     popd
